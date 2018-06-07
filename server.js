@@ -14,7 +14,6 @@ if (user && pass) {
 app.use(express.logger('dev'));
 app.use(express.compress());
 app.use(express.static(__dirname + '/public'));
-app.use(express.static(__dirname + '/css/styles.css'));
 
 app.listen(app.get('port'), function() {
   console.log('Server listening on port %s', app.get('port'));
